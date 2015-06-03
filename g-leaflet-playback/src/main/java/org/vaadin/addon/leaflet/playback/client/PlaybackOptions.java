@@ -14,7 +14,11 @@ public class PlaybackOptions extends JavaScriptObject {
     protected PlaybackOptions() {}
 
     public static native PlaybackOptions create() /*-{
-        return {};
+        return {     
+            playControl: true,
+            dateControl: true,
+            sliderControl: true
+        };
     }-*/;
 
     public native final void setPlayControl(Boolean playControl) /*-{

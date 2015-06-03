@@ -1,7 +1,8 @@
 package org.vaadin.addon.leaflet.playback.client;
 
-import org.vaadin.addon.leaflet.client.AbstractLeafletComponentState;
+import com.vaadin.shared.communication.SharedState;
 
-public class LPlaybackState extends AbstractLeafletComponentState {
 
+public class LPlaybackState extends SharedState {
+    public String geojsondata;
 }
